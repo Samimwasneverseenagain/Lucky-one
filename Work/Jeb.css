@@ -1,0 +1,322 @@
+*{
+    scroll-behavior: smooth;
+}
+
+.All {
+    margin-left: 70px;
+    margin-right: 70px;
+    scroll-behavior: smooth;
+}
+
+
+/*nav*/
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 32px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+nav img {
+    width: 80px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: "Gowun Dodum", sans-serif;
+    font-size: larger;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    margin-left: 2em;
+    transition: 300ms;
+}
+
+nav a:hover {
+    color: chartreuse;
+    font-weight: bold;
+}
+
+/*hero section*/
+
+.Villan-section {
+    display: flex;
+    flex-direction: row;;
+    margin-bottom: 50px;
+}
+
+.villan-details {
+    margin-left: 50px;
+    padding: 2%;
+    line-height: 1.4;
+}
+
+.Sale {
+    background-color: greenyellow;
+    text-align: center;
+    font-size: 100%;
+    color: white;
+    padding: 10px;
+    max-width: 30%;
+}
+
+.villan-details h1 {
+    font-size: 5rem;
+    font-family: "Dosis", sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+.villan-details p {
+    font-family: "Dosis", sans-serif;
+    font-weight: 100;
+}
+
+.villan-details button {
+    background-color: burlywood;
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid grey;
+}
+
+.villan-details button:hover {
+    cursor: pointer;
+}
+
+.features {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.featured {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    transition: 0.2s ease-in-out;
+}
+
+.featured img {
+    width: 72px;
+}
+
+.featured:hover {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    transition: 0.2s ease-in-out;
+}
+
+.disocunts  {
+    font-family: "Dosis", sans-serif;
+}
+
+.line {
+    border: 1px solid black;
+}
+
+/*menu*/
+
+.menu {
+    margin-top: 100px;
+}
+
+.menu .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu .buttons button {
+    background-color: greenyellow;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: none;
+}
+
+.menu .buttons button:hover {
+    cursor: pointer;
+}
+
+.menu .buttons h2 {
+    font-family: "Dosis", sans-serif;
+    margin-bottom: 30px;
+    
+}
+
+.flexer img {
+    transition: 700ms linear;
+    width: 100%;
+    height: 100%;
+}
+
+.flexer {
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+     "t1 t1 t2 t3"   
+     "t1 t1 t2 t7"
+     "t4 t5 t6 t7"             
+    ;
+}
+
+.img-1 {
+    grid-area: t1;
+}
+
+.img-2 {
+    grid-area: t2;
+}
+
+.img-3 {
+    grid-area: t3;
+}
+
+.img-4 {
+    grid-area: t4;
+}
+
+.img-5 {
+    grid-area: t5;
+}
+
+.img-6 {
+    grid-area: t6;
+}
+
+.img-7 {
+    grid-area: t7;
+}
+
+.flexer img:hover {
+    transform: scale(1.01);
+    transition: 700ms ease-in-out;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+/*fo0ter*/
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: bisque;
+    margin-top: 70px;
+}
+
+footer .big {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+
+
+footer img {
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+footer ul {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul li a {
+    color: black;
+    text-decoration: none;
+    font-family: "Dosis", sans-serif;
+    font-weight: 100;
+    line-height: 1.4;
+}
+
+footer h2 {
+    color: burlywood;
+    font-family: "Dosis", sans-serif;
+    font-size: 20px;
+}
+
+footer input {
+    padding: 5px 40px;
+}
+
+footer .social-media .IG img {
+    width: 80px;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.main-links .social-media .IG img {
+    width: 30px;
+}
+
+@media (max-width: 786px) {
+
+    nav a {
+        font-size: 100%;
+    }
+
+    .Villan-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Villan-section img {
+        width: 300px;
+    }
+
+    .Villan-section h1 {
+        font-size: 1rem ;
+        font-weight: bold;
+    }
+    .Villan-section .Sale {
+        max-width: 60%;
+        margin-top: 10%;
+        margin-bottom: 10% ;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .big {
+        display: flex;  
+        flex-direction: column; 
+    }
+
+}
